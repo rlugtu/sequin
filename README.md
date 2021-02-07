@@ -1,15 +1,15 @@
 # README
-SETUP 
+SETUP  <br />
 
-Ruby Version 2.7.2
+Ruby Version 2.7.2 <br />
 
 TO SETUP <br />
-download this repo
-cd into 'sequin'
-run yarn add or npm install
-run rails db:setup
-run rails db:migrate
+download this repo <br />
+cd into 'sequin' <br />
+run yarn add or npm install <br />
+run rails db:setup <br />
+run rails db:migrate <br />
 
-TO START SERVER 
-run rails s
-in your browser, go to localhost specified by terminal (generally localhost:3000)
+TO START SERVER <br />
+run rails s <br />
+in your browser, go to localhost specified by terminal (generally localhost:3000) 
