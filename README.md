@@ -5,7 +5,7 @@ Ruby Version 2.7.2 <br />
 
 TO SETUP <br />
 download this repo <br />
-cd into 'sequin' <br />
+cd into 'sequin-main' <br />
 run yarn add or npm install <br />
 run rails db:setup <br />
 run rails db:migrate <br />
