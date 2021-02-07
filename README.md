@@ -12,4 +12,4 @@ run rails db:migrate
 
 TO START SERVER 
 run rails s
-go to localhost specified by terminal (generally localhost:3000)
+in your browser, go to localhost specified by terminal (generally localhost:3000)
