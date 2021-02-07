@@ -7,11 +7,12 @@ module Api
 
                 render json: CardSerializer.new(cards, options).serialized_json
             end
-
+      
             def show
-                card = Card.find_by(slug: params[:slug])
+                
+                card = Card.find(params[:slug])
 
-                render json: CardSerializer.new(cards, options).serialized_json
+                render json: CardSerializer.new(card, options).serialized_json
             end
 
             def create
@@ -25,8 +26,8 @@ module Api
             end
 
             def update
-                card = Card.find_by(slug: params[:slug])
-
+                card = Card.find(params[:slug])
+                
                 if card.update(card_params)
                     render json: CardSerializer.new(card, options).serialized_json
                 else
@@ -36,7 +37,7 @@ module Api
 
 
             def destroy
-                card = Card.find_by(slug: params[:slug])
+                card = Card.find(params[:slug])
 
                 if card.destroy
                     head :no_content
@@ -47,7 +48,7 @@ module Api
 
             private
             def card_params
-                params.require(:card).permit(:name, :limit, :balance)
+                params.require(:card).permit(:id,:name, :limit, :availible_balance)
             end
             
             def options

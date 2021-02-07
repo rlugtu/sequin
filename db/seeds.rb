@@ -6,11 +6,3 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-cards = Card.create([
-    {
-        name:"My first Card",
-        limit:10000,
-        balance: 0
-    }
-])

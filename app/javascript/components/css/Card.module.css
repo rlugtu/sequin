@@ -1,0 +1,70 @@
+.cardContainer {
+  padding: 20px 40px;
+  border-radius: 10px;
+  min-width: 600px;
+  margin: 20px 0;
+  background-color: rgb(85, 128, 170);
+}
+.accountInfo {
+  display: flex;
+}
+.cardName {
+  color: white;
+  margin: 0;
+}
+.cardAmounts {
+  width: 100%;
+}
+.cardButtons {
+  display: flex;
+}
+.cardResults {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+.cardHeaders {
+  color: rgb(161, 199, 219);
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.cardResults {
+  color: white;
+}
+.deleteButton,
+.chargeButton {
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 100px;
+  background-color: rgb(37, 98, 160);
+  width: 100px;
+  color: white;
+  cursor: pointer;
+  margin: 0 20px;
+  margin-left: 0;
+  cursor: pointer;
+}
+.deleteButton:hover {
+  background-color: lightblue;
+  color: rgb(37, 98, 160);
+}
+
+.chargeButton:hover {
+  background-color: lightblue;
+  color: rgb(37, 98, 160);
+}
+.deleteButton {
+  margin-right: 0;
+}
+
+.chargesContainer {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px 0;
+  max-height: 300px;
+  overflow: auto;
+}
+.chargeContainer {
+  color: red;
+  padding: 5px 10px;
+  border-bottom: 1px solid grey;
+}

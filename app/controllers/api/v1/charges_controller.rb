@@ -4,9 +4,17 @@ module Api
             protect_from_forgery with: :null_session
 
             def create
-                charge = Charge.new(card_params)
+                charge = card.charges.new(charge_params)
+            
+                # if((:card.availible_balance) - :charge_amount > 0) 
+                #     charge.save
+                #     render json: ChargeSerializer.new(charge).serialized_json
+                
+                # else
+                # render json: {error: charge.errors.messages}, status: 422
 
-                if review.save
+                # end
+                if charge.save
                     render json: ChargeSerializer.new(charge).serialized_json
                 else
                     render json: {error: charge.errors.messages}, status: 422
@@ -14,9 +22,9 @@ module Api
             end
 
             def destroy
-                card = Card.find(params[:id])
+                charge = Charge.find(params[:id])
 
-                if card.destroy
+                if charge.destroy
                     head :no_content
                 else
                     render json: {error: card.errors.messages}, status: 422
@@ -24,8 +32,11 @@ module Api
             end
 
             private
+            def card
+                @card ||=Card.find(params[:card_id])
+            end
             def charge_params
-                params.require(:review).permit(charge_amount, :card_id)
+                params.require(:charge).permit(:charge_amount, :card_id)
             end
         end
     end

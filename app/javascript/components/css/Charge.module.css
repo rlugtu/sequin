@@ -1,0 +1,25 @@
+.chargeForm {
+  display: flex;
+  align-items: center;
+}
+.form {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.form * {
+  margin: 5px 0;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+.label {
+  color: white;
+}
+.button {
+  height: 100%;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: black;
+}
