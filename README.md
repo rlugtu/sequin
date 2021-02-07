@@ -3,7 +3,7 @@ SETUP
 
 Ruby Version 2.7.2
 
-TO SETUP 
+TO SETUP <br />
 download this repo
 cd into 'sequin'
 run yarn add or npm install
