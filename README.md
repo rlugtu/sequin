@@ -1,24 +1,15 @@
 # README
+SETUP 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby Version 2.7.2
 
-Things you may want to cover:
+TO SETUP 
+download this repo
+cd into 'sequin'
+run yarn add or npm install
+run rails db:setup
+run rails db:migrate
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TO START SERVER 
+run rails s
+go to localhost specified by terminal (generally localhost:3000)
